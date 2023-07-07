@@ -6,7 +6,7 @@ const Authentication = ({ children }) => {
     const user  = useAuth();
     const loacation = useLocation();
     console.log("loacation value", location);
-    if (!user.usename) {
+    if (!user.username) {
         return <Navigate to="login" state={{ path: locaction.pathname }}>;
     }
     return children;
