@@ -11,4 +11,5 @@ const Authentication = ({ children }) => {
     }
     return children;
 };
+
 export default Authentication;
