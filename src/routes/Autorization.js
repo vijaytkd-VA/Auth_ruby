@@ -6,6 +6,7 @@ const Authorization = ({ Permissions }) => {
   const location = userLoaction();
   console.log("loacation value", location);
   if (user.username) {
+      
     const userpermission = user.permissions;
     const isAllowed = permissions.some((allowed) => {
       userpermission.includes(allowed);
